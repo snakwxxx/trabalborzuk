@@ -5,135 +5,188 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso de Desenvolvimento de Sistemas - SETEC</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Header e Navegação -->
     <header>
-        <nav>
-            <div class="logo">
-                <h1>DS - SETEC</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#curso-ds">Curso DS</a></li>
-                <li><a href="#ia-temas">Temas de IA</a></li>
-                <li><a href="#setec-futuro">SETEC Futurista</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1><i class="fas fa-laptop-code"></i> DS - SETEC</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#curso-ds">Curso DS</a></li>
+                    <li><a href="#ia-temas">Temas de IA</a></li>
+                    <li><a href="#setec-futuro">SETEC Futurista</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <!-- Seção 1: Curso de DS -->
-        <section id="curso-ds" class="section">
-            <div class="container">
-                <h2>Curso de Desenvolvimento de Sistemas</h2>
-                <div class="content-wrapper">
-                    <div class="text-content">
-                        <p>O curso técnico em Desenvolvimento de Sistemas da SETEC prepara os estudantes para atuarem no mercado de tecnologia, que está em constante crescimento e transformação. Com uma abordagem prática e atualizada, o curso capacita os alunos para desenvolver, implantar e manter sistemas computacionais.</p>
-                        
-                        <p>Durante o curso, os estudantes aprendem:</p>
-                        <ul>
-                            <li>Lógica de programação e algoritmos</li>
-                            <li>Desenvolvimento web (HTML, CSS, JavaScript)</li>
-                            <li>Programação orientada a objetos</li>
-                            <li>Bancos de dados e SQL</li>
-                            <li>Desenvolvimento mobile</li>
-                            <li>Engenharia de software</li>
-                        </ul>
-                        
-                        <p>Com laboratórios equipados e professores qualificados, os alunos têm a oportunidade de trabalhar em projetos reais, desenvolvendo as competências necessárias para se tornarem profissionais completos na área de tecnologia.</p>
-                    </div>
-                    <div class="media-content">
-                        <img src="imagens/laboratorio-tecnologia.jpg" alt="Laboratório de tecnologia da SETEC" class="section-image">
-                        <div class="video-container">
-                            <iframe width="100%" height="315" src="https://www.youtube.com/watch?v=L61VM6wPFwY" title="Vídeo sobre o curso de Desenvolvimento de Sistemas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Desenvolvimento de Sistemas</h2>
+                <p>Transformando ideias em soluções tecnológicas inovadoras</p>
+                <a href="#curso-ds" class="btn">Saiba Mais</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 1: Curso de DS -->
+    <section id="curso-ds" class="section">
+        <div class="container">
+            <h2>Curso de Desenvolvimento de Sistemas</h2>
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <p>O curso técnico em Desenvolvimento de Sistemas da SETEC prepara os estudantes para atuarem no mercado de tecnologia, que está em constante crescimento e transformação. Com uma abordagem prática e atualizada, o curso capacita os alunos para desenvolver, implantar e manter sistemas computacionais.</p>
+                    
+                    <p>Durante o curso, os estudantes aprendem:</p>
+                    <ul>
+                        <li>Lógica de programação e algoritmos</li>
+                        <li>Desenvolvimento web (HTML, CSS, JavaScript)</li>
+                        <li>Programação orientada a objetos</li>
+                        <li>Bancos de dados e SQL</li>
+                        <li>Desenvolvimento mobile</li>
+                        <li>Engenharia de software</li>
+                    </ul>
+                    
+                    <p>Com laboratórios equipados e professores qualificados, os alunos têm a oportunidade de trabalhar em projetos reais, desenvolvendo as competências necessárias para se tornarem profissionais completos na área de tecnologia.</p>
+                </div>
+                <div class="media-content">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/L61VM6wPFwY" title="Vídeo sobre o curso de Desenvolvimento de Sistemas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Seção 2: Temas de IA -->
-        <section id="ia-temas" class="section dark">
-            <div class="container">
-                <h2>Temas de Inteligência Artificial</h2>
-                <div class="topics-grid">
-                    <div class="topic-card">
-                        <h3>Machine Learning</h3>
-                        <p>Machine Learning é um subcampo da inteligência artificial que se concentra no desenvolvimento de sistemas que podem aprender com dados, identificar padrões e tomar decisões com intervenção humana mínima.</p>
-                        <div class="video-container">
-                            <iframe width="100%" height="215" src="https://www.youtube.com/embed/VIDEO_ML" title="Vídeo sobre Machine Learning" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
+    <!-- Seção 2: Temas de IA -->
+    <section id="ia-temas" class="section dark">
+        <div class="container">
+            <h2>Temas de Inteligência Artificial</h2>
+            <div class="topics-grid">
+                <div class="topic-card">
+                    <h3>Machine Learning</h3>
+                    <p>Machine Learning é um subcampo da inteligência artificial que se concentra no desenvolvimento de sistemas que podem aprender com dados, identificar padrões e tomar decisões com intervenção humana mínima.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/hFpUlXKYCls" title="Vídeo sobre Machine Learning" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    
-                    <div class="topic-card">
-                        <h3>Redes Neurais Artificiais</h3>
-                        <p>Inspiradas no cérebro humano, as redes neurais artificiais são sistemas de computação com nós interconectados que funcionam como neurônios. Elas são capazes de aprender e melhorar sua performance com experiência.</p>
-                        <div class="video-container">
-                            <iframe width="100%" height="215" src="https://www.youtube.com/embed/VIDEO_RNA" title="Vídeo sobre Redes Neurais" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
+                </div>
+                
+                <div class="topic-card">
+                    <h3>Redes Neurais Artificiais</h3>
+                    <p>Inspiradas no cérebro humano, as redes neurais artificiais são sistemas de computação com nós interconectados que funcionam como neurônios. Elas são capazes de aprender e melhorar sua performance com experiência.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/6GjEEeyfq_0" title="Vídeo sobre Redes Neurais" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    
-                    <div class="topic-card">
-                        <h3>Processamento de Linguagem Natural</h3>
-                        <p>O PLN é uma área da IA que se concentra na interação entre computadores e linguagem humana. Ele permite que máquinas entendam, interpretem e gerem linguagem humana de maneira valiosa.</p>
-                        <div class="video-container">
-                            <iframe width="100%" height="215" src="https://www.youtube.com/embed/VIDEO_PLN" title="Vídeo sobre Processamento de Linguagem Natural" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
+                </div>
+                
+                <div class="topic-card">
+                    <h3>Processamento de Linguagem Natural</h3>
+                    <p>O PLN é uma área da IA que se concentra na interação entre computadores e linguagem humana. Ele permite que máquinas entendam, interpretem e gerem linguagem humana de maneira valiosa.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/yQo3sMIDmJI" title="Vídeo sobre Processamento de Linguagem Natural" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    
-                    <div class="topic-card">
-                        <h3>Visão Computacional</h3>
-                        <p>A visão computacional permite que computadores "vejam" e interpretem o mundo visual. Ela envolve a aquisição, processamento e análise de imagens do mundo real para produzir informações numéricas ou simbólicas.</p>
-                        <div class="video-container">
-                            <iframe width="100%" height="215" src="https://www.youtube.com/embed/VIDEO_VISAO" title="Vídeo sobre Visão Computacional" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
+                </div>
+                
+                <div class="topic-card">
+                    <h3>Visão Computacional</h3>
+                    <p>A visão computacional permite que computadores "vejam" e interpretem o mundo visual. Ela envolve a aquisição, processamento e análise de imagens do mundo real para produzir informações numéricas ou simbólicas.</p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/L61VM6wPFwY" title="Vídeo sobre Visão Computacional" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Seção 3: SETEC Futurista -->
-        <section id="setec-futuro" class="section futuristic">
-            <div class="container">
-                <h2>SETEC: Visão Futurista</h2>
-                <div class="content-wrapper">
-                    <div class="text-content">
-                        <p>Imaginamos a SETEC do futuro como um centro de excelência em tecnologia, totalmente integrado com as inovações mais recentes em inteligência artificial. Em nossa visão, a instituição se tornará referência nacional em educação tecnológica, com:</p>
-                        
-                        <ul>
-                            <li>Laboratórios equipados com tecnologia de ponta</li>
-                            <li>Salas de aula imersivas com realidade aumentada</li>
-                            <li>Parcerias com as maiores empresas de tecnologia do mundo</li>
-                            <li>Professores especialistas em IA atuando no mercado</li>
-                            <li>Projetos interdisciplinares que resolvem problemas reais da sociedade</li>
-                        </ul>
-                        
-                        <h3>IA na Educação: O Futuro da SETEC</h3>
-                        <p>Um dos principais temas de IA que será implementado na SETEC do futuro é a educação personalizada através de sistemas inteligentes. Assistentes virtuais com IA serão capazes de:</p>
-                        
-                        <ul>
-                            <li>Adaptar o conteúdo educacional ao ritmo de aprendizado de cada aluno</li>
-                            <li>Identificar dificuldades de aprendizado e sugerir materiais de apoio</li>
-                            <li>Simular ambientes de trabalho realistas para prática dos estudantes</li>
-                            <li>Fornecer feedback instantâneo sobre projetos e exercícios</li>
-                            <li>Prever tendências do mercado para orientar a formação profissional</li>
-                        </ul>
-                        
-                        <p>Essa abordagem tornará o aprendizado mais eficiente, engajador e alinhado com as necessidades do mercado de trabalho do futuro.</p>
-                    </div>
-                    <div class="media-content">
-                        <img src="imagens/setec-futurista.jpg" alt="Visão futurista da SETEC" class="section-image">
+    <!-- Seção 3: SETEC Futurista -->
+    <section id="setec-futuro" class="section futuristic">
+        <div class="container">
+            <h2>SETEC: Visão Futurista</h2>
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <p>Imaginamos a SETEC do futuro como um centro de excelência em tecnologia, totalmente integrado com as inovações mais recentes em inteligência artificial. Em nossa visão, a instituição se tornará referência nacional em educação tecnológica, com:</p>
+                    
+                    <ul>
+                        <li>Laboratórios equipados com tecnologia de ponta</li>
+                        <li>Salas de aula imersivas com realidade aumentada</li>
+                        <li>Parcerias com as maiores empresas de tecnologia do mundo</li>
+                        <li>Professores especialistas em IA atuando no mercado</li>
+                        <li>Projetos interdisciplinares que resolvem problemas reais da sociedade</li>
+                    </ul>
+                    
+                    <h3>IA na Educação: O Futuro da SETEC</h3>
+                    <p>Um dos principais temas de IA que será implementado na SETEC do futuro é a educação personalizada através de sistemas inteligentes. Assistentes virtuais com IA serão capazes de:</p>
+                    
+                    <ul>
+                        <li>Adaptar o conteúdo educacional ao ritmo de aprendizado de cada aluno</li>
+                        <li>Identificar dificuldades de aprendizado e sugerir materiais de apoio</li>
+                        <li>Simular ambientes de trabalho realistas para prática dos estudantes</li>
+                        <li>Fornecer feedback instantâneo sobre projetos e exercícios</li>
+                        <li>Prever tendências do mercado para orientar a formação profissional</li>
+                    </ul>
+                    
+                    <p>Essa abordagem tornará o aprendizado mais eficiente, engajador e alinhado com as necessidades do mercado de trabalho do futuro.</p>
+                </div>
+                <div class="media-content">
+                    <div class="futuristic-image">
+                        <i class="fas fa-robot"></i>
+                        <i class="fas fa-microchip"></i>
+                        <i class="fas fa-vr-cardboard"></i>
+                        <i class="fas fa-brain"></i>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
             <p>Desenvolvido para a avaliação de Front-End - Curso de Desenvolvimento de Sistemas - SETEC</p>
             <p>© 2023 - Todos os direitos reservados</p>
         </div>
     </footer>
+
+    <script>
+        // Menu mobile
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Smooth scrolling para links de navegação
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animação de elementos ao rolar
+        window.addEventListener('scroll', function() {
+            const elements = document.querySelectorAll('.topic-card, .content-wrapper');
+            
+            elements.forEach(element => {
+                const position = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if(position < screenPosition) {
+                    element.style.opacity = 1;
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
