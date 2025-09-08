@@ -16,8 +16,8 @@
                     <h1><i class="fas fa-laptop-code"></i> DS - SETEC</h1>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="ds.html">Curso DS</a></li>
+                    <li><a href="index.html" class="active">Início</a></li>
+                    <li><a href="DS.html">Curso DS</a></li>
                     <li><a href="ia.html">Temas de IA</a></li>
                     <li><a href="setec.html">SETEC Futuro</a></li>
                 </ul>
@@ -35,15 +35,16 @@
                 <h2>Desenvolvimento de Sistemas</h2>
                 <p>Transformando ideias em soluções tecnológicas inovadoras</p>
                 <div class="hero-buttons">
-                    <a href="ds.html" class="btn">Conheça o Curso</a>
-                    <a href="ia.html" class="btn btn-outline">Explorar IA</a>
+                    <a href="DS.html" class="btn btn-filled">Conheça o Curso</a>
+                    <a href="ia.html" class="btn">Explorar IA</a>
+                    <a href="setec.html" class="btn">Visão Futurista</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Seção de Destaques -->
-    <section class="section">
+    <section class="highlights">
         <div class="container">
             <h2>Destaques</h2>
             <div class="highlights-grid">
@@ -51,21 +52,45 @@
                     <i class="fas fa-code"></i>
                     <h3>Curso de DS</h3>
                     <p>Formação completa em desenvolvimento de sistemas com abordagem prática e atualizada.</p>
-                    <a href="ds.html" class="btn-small">Saiba mais</a>
+                    <a href="DS.html" class="btn btn-small">Saiba mais</a>
                 </div>
                 
                 <div class="highlight-card">
                     <i class="fas fa-brain"></i>
                     <h3>Inteligência Artificial</h3>
                     <p>Explore os principais temas de IA que estão moldando o futuro da tecnologia.</p>
-                    <a href="ia.html" class="btn-small">Descobrir</a>
+                    <a href="ia.html" class="btn btn-small">Descobrir</a>
                 </div>
                 
                 <div class="highlight-card">
                     <i class="fas fa-graduation-cap"></i>
                     <h3>SETEC Futuro</h3>
                     <p>Conheça nossa visão para a educação tecnológica com implementações de IA.</p>
-                    <a href="setec.html" class="btn-small">Ver visão</a>
+                    <a href="setec.html" class="btn btn-small">Ver visão</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Vídeos -->
+    <section class="videos-section">
+        <div class="container">
+            <h2>Vídeos em Destaque</h2>
+            <div class="videos-grid">
+                <div class="video-item">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/14ZiEr279hQ" title="Vídeo sobre programação" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>Introdução à Programação</h3>
+                    <p>Conheça os fundamentos da programação e por onde começar sua jornada.</p>
+                </div>
+                
+                <div class="video-item">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/ML1fgVfxuRU" title="Vídeo sobre inteligência artificial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>IA para Iniciantes</h3>
+                    <p>Entenda os conceitos básicos de inteligência artificial e machine learning.</p>
                 </div>
             </div>
         </div>
@@ -79,6 +104,63 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // Menu mobile
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Smooth scrolling para links de navegação
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Animação de elementos ao rolar
+        window.addEventListener('scroll', function() {
+            const elements = document.querySelectorAll('.highlight-card, .video-item');
+            
+            elements.forEach(element => {
+                const position = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if(position < screenPosition) {
+                    element.style.opacity = 1;
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        // Inicializar animações
+        window.addEventListener('load', function() {
+            const elements = document.querySelectorAll('.highlight-card, .video-item');
+            elements.forEach(element => {
+                element.style.opacity = 0;
+                element.style.transform = 'translateY(20px)';
+                element.style.transition = 'opacity 0.5s, transform 0.5s';
+            });
+            
+            // Disparar animação inicial
+            setTimeout(function() {
+                elements.forEach(element => {
+                    const position = element.getBoundingClientRect().top;
+                    const screenPosition = window.innerHeight / 1.3;
+                    
+                    if(position < screenPosition) {
+                        element.style.opacity = 1;
+                        element.style.transform = 'translateY(0)';
+                    }
+                });
+            }, 100);
+        });
+    </script>
 </body>
 </html>
